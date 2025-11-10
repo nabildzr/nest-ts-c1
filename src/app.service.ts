@@ -1,8 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 
-@Injectable()
+// tempat menyimpan business logic aplikasi
+
+@Injectable() // menandakan bahwa class ini dapat di inject/import ke controller atau service lain melalui dependency injection
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
+    //   fn
+    getHello(): string {
+        // rn
+        return 'Hello World!';
+    }
 }
+
+// service ini bisa di inject ke controller atau service lain
+// atau service ini bisa di import ke controller atau service lain
